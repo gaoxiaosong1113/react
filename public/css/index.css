@@ -1,0 +1,538 @@
+/*****************************首页*********************************/
+
+
+/***banner大图和搜索栏部分开始***/
+
+body {
+    background-color: #f2f2f2;
+}
+
+
+/*banner特效*/
+
+.banner {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.main_visual {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main_image {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main_image ul {
+    width: 9999px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.main_image li {
+    float: left;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    background-size: 10% auto; 
+}
+
+.main_image li span {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -960px;
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+
+.main_image li span img {
+    height: auto;
+}
+
+.main_image li a {
+    display: block;
+    width: 100%;
+}
+
+div.flicking_con {
+    width: 500px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 999;
+    height: 21px;
+    margin: 0 0 0 -250px;
+    text-align: center;
+}
+
+div.flicking_con a {
+    width: 14px;
+    height: 14px;
+    margin: 0 5px;
+    background: url('../images/btn_main_img.png') 0 0 no-repeat;
+    display: inline-block;
+}
+
+div.flicking_con a.on {
+    background: url("../images/btn_main_img_hover.png") 0 0 no-repeat;
+}
+
+#btn_prev,
+#btn_next {
+    z-index: 11111;
+    position: absolute;
+    display: block;
+    width: 40px !important;
+    height: 40px !important;
+    top: 56%;
+    margin-top: -37px;
+    display: none;
+}
+
+#btn_prev {
+    background: url("hover_left.png") no-repeat left top;
+    background-image: url("hover_left.png");
+    left: 20px;
+    background-size: 40px auto;
+    -moz-background-size: 40px auto;
+    -webkit-background-size: 40px auto;
+    -o-background-size: 40px auto;
+    background-image: url("hover_left.png");
+    background-size: cover;
+    filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src="hover_left.png", sizingMethod='scale');
+}
+
+#btn_next {
+    background: url("hover_right.png") no-repeat right top;
+    right: 20px;
+    background-size: 40px auto
+}
+
+.home-login-warp {
+    position: relative;
+    top: -300px;
+    margin: 0 auto
+}
+
+.home-login {
+    padding: 0 50px;
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 0px 7px 0 #0081bc;
+}
+
+.home-login .btn-info {
+    background: #8beff6;
+    color: #fff;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-family: "微软雅黑";
+    box-shadow: 0 0 4px #4696ba;
+    -webkit-box-shadow: 0 0 4px #4696ba;
+    -moz-box-shadow: 0 0 4px #4696ba;
+}
+
+.home-login .input-group-addon {
+    padding: 0;
+    border: 0;
+    padding-left: 10px;
+    background: none;
+}
+
+.home-login .input-group .form-control {
+    border-radius: 4px;
+}
+
+.home-login .form-control {
+    box-shadow: inset 0 0 4px #d0cfcf;
+    -webkit-box-shadow: inset 0 0 4px #d0cfcf;
+    -moz-box-shadow: inset 0 0 4px #d0cfcf;
+}
+
+.home-login .checkbox {
+    color: #fff;
+    font-family: "微软雅黑";
+}
+
+.home-login-head {
+    margin: 15px 0;
+    height: 34px;
+    font-size: 0px;
+}
+
+.home-login-head a {
+    padding-right: 15px;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    font-family: "微软雅黑";
+    height: 34px;
+    line-height: 34px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.home-login-head a.border {
+    padding-left: 15px;
+    padding-right: 0;
+    border-left: 1px solid #fff;
+}
+
+.main {
+    padding-bottom: 73px;
+}
+
+.main-box-warp {
+    margin-top: 28px;
+}
+
+.main-box {
+    width: 100%;
+    height: 204px;
+    background: #fff;
+    box-shadow: 0 0 4px #d0cfcf;
+    -webkit-box-shadow: 0 0 4px #d0cfcf;
+    -moz-box-shadow: 0 0 4px #d0cfcf;
+    padding: 21px;
+    position: relative;
+}
+
+.main-box .main-box-head {}
+
+.main-box .main-box-head h2 {
+    color: #ff7231;
+    font-size: 20px;
+    font-family: "微软雅黑";
+}
+
+.main-box .main-box-head .main-box-border {
+    border-top: 1px dashed #ffb75e;
+    width: 235px;
+    margin: 10px 0;
+}
+
+.main-box .main-box-head .main-box-border span {
+    display: block;
+    width: 235px;
+    width: 7px;
+    height: 7px;
+    background: #ffb75e;
+    border-radius: 50%;
+    position: relative;
+    top: -3px;
+}
+
+.main-box .main-box-body p {
+    color: #666666;
+    font-size: 14px;
+    font-family: "微软雅黑";
+}
+
+.main-box .main-box-btn {
+    width: 192px;
+    height: 44px;
+    position: absolute;
+    right: 21px;
+    top: 40px;
+    text-align: right;
+}
+
+.main-box .main-box-btn button {
+    display: inline-block;
+    width: 192px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0;
+    border: 0;
+    font-family: "微软雅黑";
+    FILTER: progid: DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#ffb45c, endColorStr=#ff702b);
+    /*IE 6 7 8*/
+    background: -ms-linear-gradient(top, #ffb45c, #ff702b);
+    /* IE 10 */
+    background: -moz-linear-gradient(top, #ffb45c, #ff702b);
+    /*火狐*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffb45c), to(#ff702b));
+    /*谷歌*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffb45c), to(#ff702b));
+    /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #ffb45c, #ff702b);
+    /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #ffb45c, #ff702b);
+    /*Opera 11.10+*/
+}
+
+.main-box .main-box-btn {}
+
+.zd-box {
+    background: url(../images/pho.jpg) no-repeat right bottom #fff;
+}
+
+.pg-box {
+    background: url(../images/search.jpg) no-repeat right bottom #fff;
+}
+
+.pro-new-warp {
+    margin-top: 15px;
+}
+
+.gxs-product-title p {
+    font-family: "微软雅黑";
+    font-size: 18px;
+    color: #666666;
+}
+
+.gxs-product-warp {}
+
+.gxs-product {
+    background: #fff;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.gxs-product img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.gxs-product-head {
+    margin-top: 5px;
+    padding: 12px 0;
+    border-bottom: 1px dashed #d2d2d2;
+}
+
+.gxs-product-head h2 {
+    color: #333333;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    line-height: 34px;
+}
+
+.gxs-product-body {
+    padding: 10px 0;
+}
+
+.gxs-product-body > div {
+    margin: 5px 0;
+    padding-left: 0;
+}
+
+.gxs-product-body > div img {
+    margin-right: 18px;
+}
+
+.gxs-product-body > div p {
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #3c5267;
+}
+
+.gxs-product-font p {
+    color: #333333;
+}
+
+.gxs-product-font span {
+    color: #ff7045;
+}
+
+.gxs-product-btn {
+    text-align: center;
+}
+
+.gxs-product-btn button {
+   padding:0 30px;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    border-radius: 4px;
+    background: #ff835e;
+    border: 0;
+    font-family: "微软雅黑";
+    margin-top: 55px;
+}
+
+.gxs-product-icon {
+    padding: 17px 17px;
+    font-size: 0;
+}
+
+.gxs-product-icon1 {
+    background: url(../images/icon2.png) no-repeat left top;
+}
+
+.gxs-product-icon2 {
+    background: url(../images/icon1.png) no-repeat left top;
+}
+
+.gxs-product-icon3 {
+    padding: 17px 22px;
+    background: url(../images/icon3.png) no-repeat left top;
+}
+
+.new {
+    padding: 10px 20px;
+    background: #fff;
+    height: 298px;
+}
+
+.new-head,
+.pro-head {
+    padding: 10px 0;
+    border-bottom: 1px solid #ffb034;
+    background: #fff;
+}
+
+.pro-head {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.new-head h2,
+.pro-head h2 {
+    font-size: 18px;
+    line-height: 1em;
+    border-left: 6px solid #ffb034;
+    font-family: "微软雅黑";
+    padding-left: 12px;
+}
+
+.new-head h2 a {
+    font-size: 12px;
+    float: right;
+    margin-top: 6px;
+    line-height: 1em;
+}
+
+.new-body {
+    padding-top: 10px;
+}
+
+.new-body li {
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #666666;
+    font-family: "微软雅黑";
+    position: relative;
+    padding-left: 12px;
+}
+
+.new-body li .l-span {
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 65%;
+}
+
+.new-body li:after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    background: #ffb034;
+}
+
+.new-body li span {
+    float: right;
+}
+
+.blogroll {
+    background: #dedede;
+    padding: 40px 0;
+}
+
+.blogroll-l {
+    color: #666666;
+}
+
+.blogroll-l a {
+    line-height: 60px;
+    font-size: 16px;
+    padding: 0 12px;
+    border-left: 1px solid #8a8a8a;
+}
+
+.blogroll-l a.cur {
+    border-right: 1px solid #8a8a8a;
+}
+
+.blogroll-l p {
+    font-size: 0;
+}
+
+.blogroll-c {
+    color: #666666;
+}
+
+.blogroll-c p {
+    color: #666666;
+    font-size: 14px;
+}
+
+.blogroll-c h3 {
+    font-size: 24px;
+    color: #666666;
+    margin-bottom: 25px;
+}
+
+.blogroll-r {
+    padding-left: 75px;
+}
+
+.blogroll-r p {
+    color: #666666;
+    font-size: 14px;
+}
+
+.blogroll-r p.lxdz {
+    margin-top: 30px;
+}
+
+.footer-copyright {
+    background: #555555;
+}
+
+.footer-copyright p {
+    text-align: center;
+    height: 76px;
+    line-height: 76px;
+    color: #999999;
+    font-size: 14px;
+}
+@media(min-width:640px) and (max-width: 1200px) {
+    .zd-box,.pg-box{
+        background-size: 60% auto; 
+    }
+    .blogroll-l a{
+        padding: 0 6px;
+    }
+    .blogroll-r{
+        padding: 0;
+    }
+        .main-box .main-box-btn button{
+        width: 150px;
+    }
+
+}

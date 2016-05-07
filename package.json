@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "babel": "babel app --out-dir lib",
   "scripts": {
-    "dev": "webpack-dev-server --progress --colors --content-base public"
+    "dev": "webpack-dev-server --progress --colors --content-base public",
+    "build": "babel app -d lib"
   },
   "author": "",
   "license": "ISC",

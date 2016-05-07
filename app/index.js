@@ -1,7 +1,8 @@
 'use strict';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Button from './components/Button/Button';
+import Dom from './components/Dom/Dom';
+
 
 let root = document.getElementById('app');
-ReactDOM.render( <Button />, root );
+ReactDOM.render( <Dom />, root );

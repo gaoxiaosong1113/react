@@ -6,7 +6,7 @@ class Button extends Component {
   }
   render(){
     const style = require('./Button.css');
-
+    
     return (
       <button className="my-button" onClick={this.handleClick.bind(this)}>
         快戳我
