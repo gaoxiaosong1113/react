@@ -1,8 +1,14 @@
 'use strict';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Dom from './components/Dom/Dom';
 
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { Router, hashHistory  } from 'react-router';
+import routes from './routes/index.js';
+
+require('bootstrap/dist/css/bootstrap.css');
+require('./static/style/animate.css');
+require('./static/style/sherd.css');
+require('./static/style/style.css');
 
 let root = document.getElementById('app');
-ReactDOM.render( <Dom />, root );
+ReactDOM.render(<Router routes={routes} history={hashHistory} />, root);

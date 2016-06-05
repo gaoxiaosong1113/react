@@ -1,0 +1,94 @@
+
+/*nav star*/
+.nav, .nav-bg {
+    padding: 0 15px !important;
+    height: 44px;
+    background: #292929;
+    border-top: 1px solid #434343;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.nav-bg {
+    position: relative;
+    z-index: 1;
+}
+
+.nav .menu {
+    width: 44px;
+    float: left;
+}
+
+.nav .menu .btn {
+    background: none;
+    margin-top: 7px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav .menu .btn .nav-bar {
+    background: #7f7f7f;
+    width: 22px;
+    height: 2px;
+    display: block;
+    border-radius: 2px;
+    margin-bottom: 4px;
+}
+
+.nav .logo {
+    position: absolute;
+    left: 59px;
+    top: 0;
+    bottom: 0;
+    right: 69px;
+}
+
+.nav .home-btn {
+    float: right;
+    text-align: center;
+}
+
+.nav .home-btn .btn {
+    font-size: 18px;
+    margin-top: 2px;
+    padding-left: 10px;
+    padding-right: 0px;
+    background: #292929;
+    color: #a9a9a9;
+    float: right;
+}
+
+.nav-list {
+    padding-bottom: 5px;
+    -webkit-box-shadow: 0 0 10px 1px #ccc;
+    box-shadow: 0 0 10px 1px #ccc;
+    position: fixed;
+    top: -400px;
+    left: 0;
+    right: 0;
+    z-index: 998;
+    background: #2b2b2b;
+    transition: all 0.2s ease-out;
+
+}
+.nav-list.an {
+    display: block;
+    top:44px;
+}
+
+.nav-list .nav-list-l {
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #343434;
+}
+
+.nav-list a {
+    color: #a9a9a9;
+}
+
+/*nav end*/

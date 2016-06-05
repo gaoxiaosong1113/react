@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Button from '../Button/Button';
 import Taby from '../Tab/Tab';
+
 let Mixin = MixinComponent => class extends Component {
 	render(){
     return (
