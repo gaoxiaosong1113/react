@@ -55,7 +55,7 @@ module.exports = {
       }),
       new HtmlWebpackPlugin({
         title: 'zhufeng-react',
-        template: './app/index.html',
+        template: './app/index.html'
       })
     ],
     devtool: 'cheap-module-source-map'

@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 class App extends Component {
     constructor(props) {
-      super(props);
+        super(props);
     }
+
     render() {
-        return ( 
-          < div >
-            {this.props.children}
-          < /div>
+        return (
+            < div >
+                {this.props.children}
+            </div>
         )
     }
 }

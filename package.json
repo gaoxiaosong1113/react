@@ -5,7 +5,7 @@
   "main": "index.js",
   "babel": "babel app --out-dir lib",
   "scripts": {
-    "dev": "webpack-dev-server --progress --colors --content-base public --history-api-fallback",
+    "dev": "webpack-dev-server --progress --colors --host 0.0.0.0  --content-base public --history-api-fallback",
     "build": "babel app -d lib"
   },
   "author": "",
@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.6",
+    "jquery": "^2.1.4",
     "core-decorators": "^0.12.2",
     "firebase": "^3.0.2",
     "history": "^2.1.1",

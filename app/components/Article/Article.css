@@ -1,0 +1,15 @@
+.article-content {
+  background: #fff;
+}
+.article-content .page-header {
+  margin: 20px 0;
+}
+.article-content .page-body {
+  padding-bottom: 20px;
+}
+.article-content .page-body .jumbotron {
+  margin-bottom: 10px;
+}
+.article-content .page-body .page-font p {
+  text-indent: 2em;
+}

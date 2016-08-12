@@ -1,25 +1,24 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import {Router, IndexRoute, Link } from 'react-router';
+import {Router, IndexRoute, Link} from 'react-router';
 
-require('./Header.css')
+require('./Header.css');
 
 class Header extends Component {
     state = {
         meng: true
-    }
+    };
 
     HeaderMeng() {
-        this.setState({ meng: !this.state.meng })
+        this.setState({meng: !this.state.meng})
     }
 
-    componentWillReceiveProps () {
-        this.setState({ meng: true })
-        
+    componentWillReceiveProps() {
+        this.setState({meng: true})
     }
 
     componentDidMount() {
-        this.setState({ meng: true })
+        this.setState({meng: true})
     }
 
     componentWillUnmount() {
@@ -29,8 +28,8 @@ class Header extends Component {
     render() {
         var MengStyle = {
             display: this.state.meng ? 'none' : 'block'
-        }
-        return ( 
+        };
+        return (
             <div>
                 <div className="gx-nav container-fluid nav">
                     <div className="menu">
@@ -41,22 +40,32 @@ class Header extends Component {
                         </button>
                     </div>
                     <div className="logo">
-                        <a href=""></a>
+                        <Link to="/home"></Link>
                     </div>
                     <div className="home-btn">
                         <button type="button" className="gx-btn btn">
-                            gxspp.com
+                            {this.props.title}
                         </button>
                     </div>
                 </div>
                 <div className="nav-bg"></div>
-        
-                <div className={this.state.meng ? 'box-fluid nav-list' :  'box-fluid nav-list an' }  >
-                    <Link to="/home"><div className="box-wid-12 nav-list-l">首页</div></Link>
-                    <Link to="/about"><div className="box-wid-12 nav-list-l">我的简历</div></Link>
-                    <Link to=""><div className="box-wid-12 nav-list-l">我的作品</div></Link>
-                    <Link to=""><div className="box-wid-12 nav-list-l">我的笔记</div></Link>
-                    <Link to=""><div className="box-wid-12 nav-list-l">插件开发</div></Link>
+
+                <div className={this.state.meng ? 'box-fluid nav-list' :  'box-fluid nav-list an' }>
+                    <Link to="/home">
+                        <div className="box-wid-12 nav-list-l">首页</div>
+                    </Link>
+                    <Link to="/about">
+                        <div className="box-wid-12 nav-list-l">我的简历</div>
+                    </Link>
+                    <Link to="/project">
+                        <div className="box-wid-12 nav-list-l">我的Project</div>
+                    </Link>
+                    <Link to="/mytext">
+                        <div className="box-wid-12 nav-list-l">我的笔记</div>
+                    </Link>
+                    <Link to="">
+                        <div className="box-wid-12 nav-list-l">插件开发</div>
+                    </Link>
                 </div>
             </div>
         )
